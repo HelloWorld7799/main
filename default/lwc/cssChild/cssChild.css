@@ -1,0 +1,12 @@
+:host{
+    display: block;
+    color: white;
+    background-color: rgb(153, 42, 165);
+}
+
+:host(.green){
+    display: block;
+    color: white;
+    background-color: rgb(11, 254, 36);
+}
+

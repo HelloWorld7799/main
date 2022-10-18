@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Accessing Elements in the Componenets">
+        <div class="slds-m-around_large">
+            <h1>Hello I am Heading Tag H1</h1>
+            <template for:each={fruits}  for:item="fruit">
+                <div class="name" key={fruit}>
+                    {fruit}
+                </div>
+            </template>
+            <div class="child" lwc:dom="manual"></div>
+            <lightning-button label="Click To See Data"  onclick={clickHandler}></lightning-button>
+           
+        </div>
+       
+    </lightning-card>
+    
+</template>

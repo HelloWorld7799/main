@@ -1,0 +1,13 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Dynamic Css" icon-name="standard:account">
+        <div class="slds-m-around_large">
+            <lightning-input type="number" variant="standard" label="Enter Value" onkeyup={keyHandler}></lightning-input>
+            <div  class="slds-notify slds-notify_alert slds-alert_error" role="alert" style={percentage}>
+                Hello I am an Alert Notification
+            </div>
+
+        </div>
+       
+    </lightning-card>
+    
+</template>

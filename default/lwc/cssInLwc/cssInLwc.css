@@ -1,0 +1,16 @@
+p{
+    color: rgb(255, 25, 25);
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: greenyellow;
+}
+.element{
+    color: rgb(224, 255, 25);
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(251, 0, 0);
+}
+
+.element:hover{
+    font-size: 100px;
+}

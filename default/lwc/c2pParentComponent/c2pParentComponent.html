@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Child to Parent Communication" >
+       <div class="slds-m-around_large">
+           <lightning-button label='Show Data' onclick={clickHandler}></lightning-button>
+           <h1>{msg}</h1>
+           <template if:true={showData}>
+            <c-c2p-modal-component
+            onclose={closeHandler}
+            ></c-c2p-modal-component>
+           </template>
+           
+       </div>
+    </lightning-card>
+    
+</template>

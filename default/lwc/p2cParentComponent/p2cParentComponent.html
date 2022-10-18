@@ -1,0 +1,37 @@
+<template>
+
+    <!-- Primitive Data -->
+    <c-p2c-alert-component
+     message="Hurray!!! I got a data from Parent"
+     card-title="Parent To Child Primitive data"
+     number ='10'
+     is-valid
+    ></c-p2c-alert-component>
+
+    <div class="slds-m-around_large"></div>
+
+    <!-- Non Primitive Data -->
+    <c-p2c-crousel-component
+    crousel-data={data}
+    ></c-p2c-crousel-component>
+
+    <div class="slds-m-around_large"></div>
+
+    <!-- On Action -->
+    <lightning-card  variant="Narrow"  title="Parent To Chid On Action">
+        <lightning-input type="number" label="Enter Percentage" onkeyup={keyHandler}></lightning-input>
+        <c-p2c-progress-component
+        percent={enterValue}
+        ></c-p2c-progress-component>
+    </lightning-card>
+
+    <div class="slds-m-around_large"></div>
+
+    <!-- Calling Child Method From Parent -->
+    <lightning-button variant="brand" label="Parent Button"  onclick={handleClick}></lightning-button>
+
+    <lightning-card  variant="Narrow"  title="Calling Child Method From Parent">
+        <c-p2c-slider-component></c-p2c-slider-component>
+       
+    </lightning-card>
+</template>

@@ -1,0 +1,27 @@
+<template>
+    <lightning-card  variant="Narrow"  title="User Permission Demo(View ALl Data)">
+        <div class="slds-m-around_large">
+            <template if:true={hasPermission}>
+                <p><strong>Hurray!!! I Have View All Data Permission</strong></p>
+            </template>
+    
+            <template if:false={hasPermission}>
+                <p><strong>Opps!!! I don't have View All Data Permission</strong></p>
+            </template>
+        </div>
+       </lightning-card>
+
+    <lightning-card  variant="Narrow"  title="Custom Permission Demo">
+
+        <div class="slds-m-around_large">
+            <template if:true={hasCustomPermission}>
+                <p><strong>Hurray!!! I Have Custom Permission</strong></p>
+            </template>
+    
+            <template if:false={hasCustomPermission}>
+                <p><strong>Opps!!! I don't have Custom Permission</strong></p>
+            </template>
+        </div>     
+    </lightning-card>
+    
+</template>
